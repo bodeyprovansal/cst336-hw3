@@ -1,0 +1,35 @@
+<!-- e206a88bfad62633f5e4671a7383ff00 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link  href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+  </head>
+  <body>
+    <div id=header>
+      <h1 id="Title">Forecast!</h1>
+    </div>
+    <div id="container">
+      
+      <div id="card">
+        <form id="zipForm" method="post">
+        
+          Zip Code:   <input type="text" name="zip" id="zip"> <br>
+          How Many Days: <input type="text" name="days" id="days"> <br>
+          <input type="submit" id="zipSubmit" value="Get Forecast"> <br>
+          <span id="zipError"></span><br>
+          <span id="dayError"></span>
+
+        </form>     
+      </div> <!-- End Card -->
+      <div id="weatherCard">
+      </div> <!-- End WeatherCard -->
+    </div> <!-- End Container --> 
+   
+    <script src="js/forecast.js"></script>
+  </body>
+</html>
